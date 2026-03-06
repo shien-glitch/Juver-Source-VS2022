@@ -1,0 +1,233 @@
+// Microsoft Visual C++ 產生的資源指令檔案。
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// 由 TEXTINCLUDE 2 資源產生。
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 繁體中文 (台灣) 資源
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TCH)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TCH)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(950)\r\n"
+    "#include ""res\\EditABF.rc2""  // 非 Microsoft Visual C++ 編輯的資源\r\n"
+    "#include ""afxres.rc""         // 標準元件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// 最小 ID 值的圖示會放在最前，以確保所有系統都能保持應用程式圖示一致。
+IDR_MAINFRAME           ICON                    "..\\res\\Icon_Tool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "關於 EditGenItem"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CrowSaleEdit 版本 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版權所有 (C) by NRDEV 2019",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "確定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_GENITEM_DIALOG DIALOGEX 0, 0, 539, 444
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "EditGenItem"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "新增",IDC_BUTTON_SALELIST_ADD,10,141,50,14
+    PUSHBUTTON      "刪除選取",IDC_BUTTON_SALELIST_DELETE,64,141,83,14
+    LTEXT           "產生機率",IDC_STATIC,13,32,29,8
+    LTEXT           "掉落數量",IDC_STATIC,20,123,55,8
+    LTEXT           "機率",IDC_STATIC,147,123,16,8
+    LTEXT           "主 ID",IDC_STATIC,16,357,25,8
+    LTEXT           "子 ID",IDC_STATIC,97,356,22,8
+    LTEXT           "機率",IDC_STATIC,105,239,16,8
+    LTEXT           "GenID",IDC_STATIC,22,239,21,8
+    EDITTEXT        IDC_EDIT_GEN_RATE,51,29,96,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DROPS,78,121,50,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RATE1,177,120,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MID,42,355,50,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SID,124,354,50,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_GENID,46,237,50,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "儲存",IDC_BUTTON_GENITEM_SAVE,104,7,50,14
+    PUSHBUTTON      "更新 Genitem",IDC_BUTTON_UPDATE,444,28,71,14
+    PUSHBUTTON      "加入清單",IDC_BUTTON_SALELIST_OK,149,140,119,14
+    GROUPBOX        "產生選項",IDC_STATIC,8,42,256,98
+    CONTROL         "",IDC_LIST_GENNUM,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,14,51,243,64
+    EDITTEXT        IDC_EDIT1,269,45,246,342,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_EDIT_RATE2,125,236,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_ITEMSPEC,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,13,165,244,68
+    CONTROL         "",IDC_LIST_ITEMID,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,13,285,243,68
+    GROUPBOX        "項目 Gen Id",IDC_STATIC,7,156,256,100
+    GROUPBOX        "項目 ID",IDC_STATIC,7,274,256,100
+    PUSHBUTTON      "新增",IDC_BUTTON_SPECLIST_ADD,9,258,50,14
+    PUSHBUTTON      "新增",IDC_BUTTON_ITEMIDLIST_ADD,7,375,50,14
+    PUSHBUTTON      "刪除選取",IDC_BUTTON_SPECLIST_DELETE,63,257,83,14
+    PUSHBUTTON      "刪除選取",IDC_BUTTON_ITEMIDLIST_DELETE,64,375,83,14
+    PUSHBUTTON      "加入清單",IDC_BUTTON_SPECLIST_OK,149,257,119,14
+    PUSHBUTTON      "加入清單",IDC_BUTTON_ITEMIDLIST_OK,150,375,119,14
+    EDITTEXT        IDC_EDIT_RATE3,203,353,46,14,ES_AUTOHSCROLL
+    LTEXT           "機率",IDC_STATIC,185,355,16,8
+    PUSHBUTTON      "載入",IDC_BUTTON_GENITEM_LOAD,43,7,50,14
+    LTEXT           "原始資料",IDC_STATIC,270,34,32,8
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404b0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <RSiLENT>"
+            VALUE "FileDescription", "TODO: <EditorGenItem>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "EditorGenItem.exe"
+            VALUE "LegalCopyright", "TODO: (c) <RSiLENT>. 保留所有權利。"
+            VALUE "OriginalFilename", "EditorGenItem.exe"
+            VALUE "ProductName", "TODO: <EditorGenItem>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 950
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GENITEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 527
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 424
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "關於(&A) EditABF..."
+END
+
+#endif    // 繁體中文 (台灣) 資源
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// 由 TEXTINCLUDE 3 資源產生。
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TCH)
+LANGUAGE 4, 2
+#pragma code_page(950)
+#include "res\EditABF.rc2"  // 非 Microsoft Visual C++ 編輯的資源
+#include "afxres.rc"         // 標準元件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // 非 APSTUDIO_INVOKED
